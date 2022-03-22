@@ -7,6 +7,7 @@ let statoMenuMobile = 'chiuso';
 
 const burgerMobile = document.querySelector('.burger-mobile');
 
+let arrow = document.querySelector('.arrow');
 
 
 //EVENT LISTENER 
@@ -69,3 +70,15 @@ window.addEventListener('scroll', ()=>{ //ANIMAZIONE PER ENTRATA TESTO SU SCROLL
     }
   
   });
+
+arrow.addEventListener('click', ()=>{ //FRECCIA IN HERO CHE PORTA LEGGERMENTE GIU
+    
+    let rootElement = document.documentElement
+
+    rootElement.scrollTo({
+        top: 400,
+        behavior: "smooth"
+    })
+})
+
+

@@ -57,7 +57,7 @@ p {
 }
 
 /* STILE GENERALE PER IL META SCHERMO */
-@media screen and (max-width: 700px){
+@media screen and (max-width: 710px){
 
     h1 {
         font-size: 55px;
@@ -86,7 +86,7 @@ p {
     
 }
 /* STILE GENERALE PER IL MOBILE */
-@media screen and (max-width: 375px){
+@media screen and (max-width: 435px){
 
     h1 {
         font-size: 50px;
@@ -96,6 +96,11 @@ p {
     h2{
         font-size:  22px;
         line-height: 30px;
+    }
+
+    h3 {
+        font-size: 30px;
+        line-height: 40px;
     }
     
 }
@@ -339,7 +344,7 @@ p {
 
     .hero-image{
         width: 100%;
-        height: 40vh;
+        height: 50vh;
     }
 
     .hero-image img{
@@ -350,9 +355,9 @@ p {
 
         justify-content: flex-start;
         width: 100%;
-        height: 60vh;
+        height: 50vh;
         text-align: center;
-        margin-top: -5%;
+        
 
     }
     .arrow{
@@ -399,7 +404,7 @@ p {
 
     .intro-text{
         width: 100%;
-        height: 60vh;
+        height: 50vh;
         text-align: center;
 
         display: flex;
@@ -409,7 +414,7 @@ p {
 
     .intro-image{
         width: 100%;
-        height: 40vh;
+        height: 50vh;
         align-items: center;
         justify-content: center;
     }

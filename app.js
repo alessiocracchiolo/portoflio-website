@@ -101,3 +101,17 @@ window.addEventListener('scroll', ()=>{ //ANIMAZIONE PER ENTRATA TESTO SU SCROLL
   
 });
 
+window.addEventListener('scroll', ()=>{ //ANIMAZIONE PER ENTRATA TESTO SU SCROLL - SECTION 3 TEXT
+  
+  let txt = document.querySelector('.section3-text'); //sezione 3 testo
+  let conentPosition = txt.getBoundingClientRect().top;
+  let screenPosition = window.innerHeight;
+
+  if(conentPosition < screenPosition){
+    txt.classList.add('sec3-active');
+  }
+  else{
+    txt.classList.remove('sec3-active');
+  }
+
+})

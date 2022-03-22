@@ -11,7 +11,7 @@ const burgerMobile = document.querySelector('.burger-mobile');
 
 //EVENT LISTENER 
 
-burger.addEventListener("click", ()=>{
+burger.addEventListener("click", ()=>{ //APERTURA E CHIUSURA NAVBAR
 
     const menu = document.querySelector('.menu')
 
@@ -31,7 +31,7 @@ burger.addEventListener("click", ()=>{
 
 })
 
-burgerMobile.addEventListener("click", ()=>{
+burgerMobile.addEventListener("click", ()=>{ //APERTURA E CHIUSURA NAVBAR MOBILE
 
     const menu = document.querySelector('.menu-mobile')
 
@@ -49,3 +49,23 @@ burgerMobile.addEventListener("click", ()=>{
     }
 
 })
+
+window.addEventListener('scroll', ()=>{ //ANIMAZIONE PER ENTRATA TESTO SU SCROLL - INTRO TEXT
+  
+    let introTxt = document.querySelector('.intro-text');  //intro text
+    let conentPosition = introTxt.getBoundingClientRect().top;
+    let screenPosition = window.innerHeight;
+  
+  
+    if(conentPosition < screenPosition){
+  
+      introTxt.classList.add('animate__animated', 'animate__fadeInTopRight');
+  
+    }
+    else{
+  
+      introTxt.classList.remove('animate__animated', 'animate__fadeInTopRight');
+  
+    }
+  
+  });

@@ -1,6 +1,15 @@
+//VARIABILI
 let statoMenu = 'chiuso';
 
 const burger = document.querySelector('.burger');
+
+let statoMenuMobile = 'chiuso';
+
+const burgerMobile = document.querySelector('.burger-mobile');
+
+
+
+//EVENT LISTENER 
 
 burger.addEventListener("click", ()=>{
 
@@ -21,9 +30,6 @@ burger.addEventListener("click", ()=>{
     }
 
 })
-
-let statoMenuMobile = 'chiuso';
-const burgerMobile = document.querySelector('.burger-mobile');
 
 burgerMobile.addEventListener("click", ()=>{
 

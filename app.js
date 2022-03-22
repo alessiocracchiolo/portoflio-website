@@ -51,6 +51,16 @@ burgerMobile.addEventListener("click", ()=>{ //APERTURA E CHIUSURA NAVBAR MOBILE
 
 })
 
+arrow.addEventListener('click', ()=>{ //FRECCIA IN HERO CHE PORTA LEGGERMENTE GIU
+    
+    let rootElement = document.documentElement
+
+    rootElement.scrollTo({
+        top: 400,
+        behavior: "smooth"
+    })
+})
+
 window.addEventListener('scroll', ()=>{ //ANIMAZIONE PER ENTRATA TESTO SU SCROLL - INTRO TEXT
   
     let introTxt = document.querySelector('.intro-text');  //intro text
@@ -71,14 +81,23 @@ window.addEventListener('scroll', ()=>{ //ANIMAZIONE PER ENTRATA TESTO SU SCROLL
   
   });
 
-arrow.addEventListener('click', ()=>{ //FRECCIA IN HERO CHE PORTA LEGGERMENTE GIU
-    
-    let rootElement = document.documentElement
-
-    rootElement.scrollTo({
-        top: 400,
-        behavior: "smooth"
-    })
-})
-
+window.addEventListener('scroll', ()=>{ //ANIMAZIONE PER ENTRATA TESTO SU SCROLL - SECTION 2 TEXT
+    //sezione 2 testo
+    let txt = document.querySelector('.section2-text');
+    let conentPosition = txt.getBoundingClientRect().top;
+    let screenPosition = window.innerHeight;
+  
+  
+    if(conentPosition < screenPosition){
+  
+      txt.classList.add('active');
+      txt.classList.add('animate__animated', 'animate__fadeInTopLeft');
+  
+    }
+    else{
+      txt.classList.remove('animate__animated', 'animate__fadeInTopLeft');
+      txt.classList.remove('active');
+    }
+  
+});
 

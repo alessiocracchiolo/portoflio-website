@@ -163,6 +163,7 @@ p {
     line-height: 20px;
     cursor: pointer;
     z-index: 1;
+    color: #000000;
 }
 
 .burger{
@@ -507,7 +508,6 @@ p {
     opacity: 0;
     transition: all 2s;
     transform: scale(0.1);
-
     
 }
 
@@ -560,8 +560,6 @@ p {
 
 }
 
-
-
 .card-image {
 
     height: 10.62rem;
@@ -608,6 +606,8 @@ p {
     
 }
 
+/* SEZIONE 3 MOBILE */
+
 @media only screen and (max-width:710px){
 
     .section3{
@@ -618,5 +618,54 @@ p {
         font-size: 18px;
         line-height: 19px;
     }
+
+}
+
+/* FOOTER */ 
+
+.footer {
+
+    height: 20vh;
+    padding: 50px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo a {
+    color: #000000;
+}
+
+.recapiti {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recapiti h4 {
+    padding: 2rem;
+    cursor: pointer;
+}
+
+.recapiti h4:hover {
+
+    font-weight: bold;
+
+}
+
+.social a{
+
+    font-size: 19px;
+    text-decoration: none;
+    color: #000000;
+
+}
+
+.social a:hover{
+
+    color: #9B7EDE;
+    font-size: 20px;
 
 }

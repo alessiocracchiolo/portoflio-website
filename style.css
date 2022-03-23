@@ -645,6 +645,7 @@ p {
 }
 
 .recapiti h4 {
+
     padding: 2rem;
     cursor: pointer;
 }
@@ -667,5 +668,26 @@ p {
 
     color: #9B7EDE;
     font-size: 20px;
+
+}
+
+/* FOOTER MOBILE */
+@media only screen and (max-width: 710px){
+
+    .footer{
+        padding: 20px;
+        height: 50vh;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .recapiti{
+        flex-direction: column;
+        padding: 10px;
+
+    }
+    .recapiti h4{
+        padding: 10px;
+    }
 
 }

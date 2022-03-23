@@ -9,6 +9,10 @@ const burgerMobile = document.querySelector('.burger-mobile');
 
 let arrow = document.querySelector('.arrow');
 
+let rootElement = document.documentElement;
+
+let btn = document.getElementById('back-to-top');
+
 
 //EVENT LISTENER 
 
@@ -115,3 +119,39 @@ window.addEventListener('scroll', ()=>{ //ANIMAZIONE PER ENTRATA TESTO SU SCROLL
   }
 
 })
+
+btn.addEventListener("click", ()=>{  //RIPORTA LA PAGINA IN ALTO
+
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+
+})
+
+document.addEventListener("scroll", ()=>{ //MOSTRA IL BOTTONE DOPO AVER AVUTO UN PO' DI SCROLL
+
+  let scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+
+  if ((rootElement.scrollTop / scrollTotal ) > 0.10 ) {
+    // Show button
+    btn.style.visibility = 'visible';
+    btn.style.opacity = '1';
+  } 
+  else {
+    // Hide button
+    btn.style.visibility = 'hidden';
+    btn.style.opacity = '0';
+  }
+
+})
+
+
+
+
+
+
+
+
+
+

@@ -569,11 +569,11 @@ p {
 }
 
 .study{
-    background-image: url('img/study.svg');
+    background-image: url('../img/home/study.svg');
 }
 
 .work{
-    background-image: url('img/work.svg');
+    background-image: url('../img/home/work.svg');
 }
 
 .card p {
